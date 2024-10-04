@@ -1,0 +1,240 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+#cname{
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    border: 3px solid #CE5937;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 10px;
+    text-shadow: 1px 2px 2px #CE5937;
+    box-shadow: 3px 1px 10px 2px rebeccapurple;
+    margin: 5px 0 15px 0;
+    flex-wrap: wrap;
+    background-color: rgb(255, 255, 255);
+}
+
+.calculator {
+    width: 400px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color:rgb(255, 232, 235);
+    border: 3px solid #000000;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(211, 24, 24, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.form-control{
+    margin: 10px;
+    width: 100%;
+    font-size: 28px;
+    display: flex;
+    cursor: pointer;
+}
+
+
+.keys {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.button {
+    width: 80px;
+    height: 60px;
+    margin: 5px;
+    padding: 10px;
+    font-size: 24px;
+    border: 1px solid grey;
+    border-radius: 10px;
+    background-color: beige;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    color: #333; /* dark gray color */
+}
+
+.button:hover {
+    background-color: #ea779d;
+}
+
+.button:active {
+    background-color: #aaa;
+}
+
+.button#clear {
+    background-color: #ff69b4;
+    color: #fff;
+}
+
+.button#backspace {
+    background-color: #ff9800;
+    color: #fff;
+}
+
+.button#sqrt {
+    background-color: #b714d4;
+    color: #fff;
+}
+
+.button#square {
+    background-color: #1842ea;
+    color: #fff;
+}
+
+.button#divide {
+    background-color: #0099cc;
+    color: #fff;
+}
+
+.button#multiply {
+    background-color: #0066cc;
+    color: #fff;
+}
+
+.button#subtract {
+    background-color: #cc0000;
+    color: #000000;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button#add {
+    background-color: #e26c11;
+    color: #000000;
+}
+
+.button#equals {
+    background-color: #7fe8d5;
+    color: #000000;
+}
+
+.button#sin {
+    background-color: #ff99cc;
+    color: #fff;
+}
+
+.button#cos {
+    background-color: #cc99ff;
+    color: #fff;
+}
+
+.button#tan {
+    background-color: #ffcc99;
+    color: #fff;
+}
+
+.button#log {
+    background-color: #99ccff;
+    color: #fff;
+}
+
+.button#e {
+    background-color: #ffccff;
+    color: #fff;
+}
+
+.button#pi {
+    background-color: #99ffcc;
+    color: #fff;
+}
+
+.button#deg {
+    background-color: #ff99cc;
+    color: #fff;
+}
+
+.button#open-bracket {
+    background-color: #33cc33;
+    color: #fff;
+}
+
+.button#close-bracket {
+    background-color: #66cc00;
+    color: #fff;
+}
+
+.button#cosec {
+    background-color: #ff99cc;
+    color: #fff;
+    font-size: 20px;
+}
+
+.button#sec {
+    background-color: #cc99ff;
+    color: #fff;
+}
+
+.button#cot {
+    background-color: #ffcc99;
+    color: #fff;
+}
+
+.button#percent {
+    background-color: #99ccff;
+    color: #fff;
+}
+/* Responsive design */
+
+@media (max-width: 768px) {
+    .calculator {
+        width: 300px;
+    }
+    .button {
+        width: 60px;
+        height: 40px;
+        font-size: 18px;
+    }
+    .display {
+        height: 40px;
+        font-size: 36px;
+    }
+    .button#cosec{
+        font-size: 16px;
+    }
+
+
+    
+}
+
+@media (max-width: 370px) {
+    .calculator {
+        width: 200px;
+    }
+    .button {
+        width: 40px;
+        height: 25px;
+        font-size: 14px;
+    }
+    .display {
+        height: 60px;
+        width: 30px;
+        font-size: 24px;
+    }
+    
+}
+
+@media (max-width: 320px) {
+    .calculator {
+        width: 180px;
+    }
+    .button {
+        width: 30px;
+        height: 25px;
+        font-size: 16px;
+    }
+    .display {
+        height: 50px;
+        font-size: 20px;
+    }
+}
